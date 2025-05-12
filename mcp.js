@@ -1,9 +1,11 @@
-const version = "1.5";
+const version = "1.12";
 const dataSet = 'rushipatel';
 
 const sitemapConfig = {
     global: {
-        contentZones: [],
+        contentZones: [
+            { name: "mcpCarousel", selector: "#mcpcarousel" }
+        ],
         listeners: []
     },
     pageTypeDefault: {
@@ -16,7 +18,7 @@ const sitemapConfig = {
         {
             name: "homepage",
             isMatch: () => {
-                return true;
+                return window.location.href === "https://coderushi2810.github.io/DAMAC-Properties-POC/index.html";
             },
             interaction: { name: 'Home Page Visited' },
             contentZones: [],
@@ -36,11 +38,11 @@ const sitemapConfig = {
     ],
 };
 
-SalesforceInteractions.init({cookieDomain: "https://coderushi2810.github.io"})
+SalesforceInteractions.init({ cookieDomain: "coderushi2810.github.io" })
     .then(() => {
         console.log("Sitemap Version:", version);
         console.log("Dataset:", dataSet);
-        // SalesforceInteractions.initSitemap(sitemapConfig);
+        SalesforceInteractions.initSitemap(sitemapConfig);
     })
     .catch((error) => {
         console.error("Failed to initialize SalesforceInteractions:", error);
