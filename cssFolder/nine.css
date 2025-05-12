@@ -1,0 +1,12 @@
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23222' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.4' d='M18 18 6 6M18 6 6 18'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 24px;
+    padding-bottom: 1px;
+    width: 24px
+}
+
+/*# sourceMappingURL=251aa02b051686d1.css.map*/

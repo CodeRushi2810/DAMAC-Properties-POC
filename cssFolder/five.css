@@ -1,0 +1,124 @@
+.autocomplete-reverse {
+    background-blend-mode: normal,luminosity;
+    background-blend-mode: luminosity;
+    border-color: hsla(0,0%,100%,.4) hsla(0,0%,100%,.1) hsla(0,0%,100%,.1) hsla(0,0%,100%,.2);
+    border-style: solid;
+    border-width: 1px;
+    position: relative
+}
+
+.autocomplete-reverse:before {
+    background-color: hsla(0,0%,50%,.2);
+    border-radius: 8px;
+    box-shadow: 0 2px 24px 0 #4e4d4b1a;
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -10
+}
+
+.autocomplete-reverse {
+    background-color: hsla(45,3%,70%,.3);
+    position: absolute
+}
+
+@media (min-width: 1024px) {
+    .autocomplete-list {
+        --tw-bg-opacity:1;
+        background-color: rgb(248 247 247/var(--tw-bg-opacity))
+    }
+}
+
+.filterbar--light .autocomplete-list {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity))
+}
+
+.autocomplete-list-reverse {
+    background-blend-mode: luminosity;
+    border-color: hsla(0,0%,100%,.4) hsla(0,0%,100%,.1) hsla(0,0%,100%,.1) hsla(0,0%,100%,.2);
+    border-style: solid;
+    border-width: 1px;
+    position: relative
+}
+
+.autocomplete-list-reverse:before {
+    background-color: hsla(0,0%,50%,.2);
+    border-radius: 8px;
+    box-shadow: 0 2px 24px 0 #4e4d4b1a;
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -10
+}
+
+.autocomplete-list-reverse {
+    background-color: hsla(45,3%,70%,.3);
+    position: absolute
+}
+
+.autocomplete-list:before {
+    border-radius: 24px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+@media (min-width: 1024px) {
+    .autocomplete-list:before {
+        --tw-drop-shadow:drop-shadow(0 1px 1px rgba(0,0,0,.05));
+        filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        --tw-backdrop-blur: blur(24px);
+        -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+    }
+}
+
+.autocomplete-list-reverse:before {
+    border-radius: 24px
+}
+
+.autocomplete-content::-webkit-scrollbar {
+    height: 4px;
+    width: 4px
+}
+
+.autocomplete-content::-webkit-scrollbar-button {
+    height: 0;
+    width: 0
+}
+
+.autocomplete-content::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    border-style: none;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity))
+}
+
+.autocomplete-content::-webkit-scrollbar-thumb:active,.autocomplete-content::-webkit-scrollbar-thumb:hover {
+    background: #000
+}
+
+.autocomplete-content::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    border-style: none
+}
+
+.autocomplete-content::-webkit-scrollbar-track:active,.autocomplete-content::-webkit-scrollbar-track:hover {
+    background-color: initial
+}
+
+.autocomplete-content::-webkit-scrollbar-corner {
+    background-color: initial
+}
+
+/*# sourceMappingURL=37fab07833295c81.css.map*/
